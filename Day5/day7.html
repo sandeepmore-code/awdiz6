@@ -5,27 +5,103 @@
         Resume.
     </title>
     <style>
-        * {margin: 0; padding: 0; font-family: 'Times New Roman', Times, serif;}
-        #parent-div {border: 2px solid red; width: 100%; height: 300px;}
+        * {margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        #parent-div {border: 2px solid red;height: 700px; width: 100%;}
     
-        #info {border: 2px solid black;width: 50%; height:300px;}
+        #info {border: 2px solid blue;width: 100%; height:340px;}
     
-        #project{ width: 60%; border: 2px solid red;}
-        .project{border: 2px solid green; width: 30%; margin-bottom: 20 px;}
+        #project{ width: 100%; border: 2px solid black; height: 50px;}
+
+        .project{border: 2px solid green; width: 100%; height: 100px;px;}
     
         .m-1{margin-left: 100px ;}
 
+        #text-underline{text-underline-offset: 1px solid black;}
+
+        #education{ border: 2px solid ; width: 100%; height: 50px;}
+
+        table, th,td{border: 2px solid black; border-collapse: collapse;text-align: center;}
+
+        .t-l{text-align: left;}
+
     
     </style>
-
+ 
 
 </head>
 <body>
     <div id="parent-div">
         <div id="info">
+            <div style="height: 200px; width: 200px;">
+            <img style="height: 100%; width: 100%;border-radius: 50%;"  src="../Media/sandeep profile image.jpeg">
+            
+            </div>
+            <h1>Sandeep More.</h1>
+            <h3>9168978959</h3>
+            <h4>Sandeepmore280@gmail.com</h4>
+            <h4>Product Designing.</h4>
+            <a href="www.linkedin.com/in/sandeep-more-500758211">linkedin-Sandeep More</a>
+        </div>
+
+        <div id="project">
+            <h1 id="text-underline"> Projects</h1>
+    
+        </div>
+
+        
+        <div class="project">
+            <h2> Automatic Over Steer Controling System</h2>
+            <p> Functionalites:</p>
+            <ul class="m-1"> 
+                <li>for Automoblies Safety</li>
+                <li> Better Stering Stablity</li>
+             </ul>
             
         </div>
+
+        <div id="education">
+            <h1>Education</h1>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Sr.No
+                    </th>
+                    <th>Degree</th>
+                    <th>University</th>
+                    <th> Grade</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="t-l">.1</td>
+                    <td> Diploma</td>
+                    <td> MSBTE</td>
+                    <td> FirstClass</td>
+                </tr>
+                <tr>
+                    <td class="t-l">.2</td>
+                    <td>BE</td>
+                    <td>Pune</td>
+                    <td>First Class</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        
+        
+
+        
+
+
+
+        
     </div>
+
+    
 </body>
 
 
