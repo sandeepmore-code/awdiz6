@@ -10,17 +10,19 @@
     <style>
         * {margin: 0;padding: 0; font-family:new 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
-        #Top {border: 2px solid black; width: 100%;height: 80px; position: fixed;display: flex;}
+        #Top {border: 2px solid black; width: 100%;height: 80px; position: fixed;display: flex;border: none;}
 
-        #Logo {border: 1px solid orangered;height: auto;width: 100px;margin-left: 5px;}
+        #Logo {border: 1px solid orangered;height: auto;width: 100px;margin-left: 5px;border: none;}
 
-        #Navs {border: 1px solid orangered;height: auto;width: 450px; margin-left: 75px;display: flex;padding-top:30px;justify-content: space-evenly;font-weight: bolder;}
+        #Navs {border: 1px solid orangered;height: auto;width: 450px; margin-left: 75px;display: flex;padding-top:30px;justify-content: space-evenly;font-weight: bolder;border: none;}
 
-        #Search {border: 1px solid orangered; height: auto;width: 450px; margin-left: 75px;}
+        #Search {border: 1px solid orangered; height: auto;width: 450px; margin-left: 75px; border: none;}
 
         #Colourbar {border: 1px solid black;height: 30px;width: 400px;margin-left: 24px;margin-top: 20px;background-color:#ecf0f1;border: none; }
 
-        #Nagivation {border: 1px solid orangered;height: auto; width: 275px;margin-left: 75px;}
+        #Nagivation {border: 1px solid orangered;height: auto; width: 275px;margin-left: 75px;display: flex;justify-content: space-between;border: none;}
+
+        
 
 
     </style>
@@ -46,7 +48,12 @@
                 
             </div>
         </div>
-        <div id="Nagivation"></div>
+        <div id="Nagivation">
+            <div style="padding-left: 50px;padding-top: 25px;"><i class="fa-regular fa-user"></i><p style="margin-left: -15px;">Profile</p></div>
+            <div style="padding-top: 25px;"><i class="fa-regular fa-heart"></i><p style="margin-left: -15px;">Wishlist</p></div>
+            <div style="padding-top: 25px; padding-right: 50px;"><i class="fa-solid fa-bag-shopping"></i><p style="margin-left: -8px;">Bag</p></div>
+
+        </div>
     </div>
     
 </body>
