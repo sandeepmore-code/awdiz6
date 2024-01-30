@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17</title>
+    <link rel="Icon" type="x-image/Icon"
+    href="https://cloud2data.com/wp-content/uploads/2023/01/HTML-CSS-Review.png"/>
+    <script src="https://kit.fontawesome.com/8c538c2675.js" crossorigin="anonymous"></script>
+    <style>
+        * {margin: 0;padding: 0; font-family:new 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+        #Top {border: 2px solid black; width: 100%;height: 80px;object-position: fixed;display: flex;border: none;}
+
+        #Logo {border: 1px solid orangered;height: auto;width: 100px;margin-left: 5px;border: none;margin-left: 30px;}
+
+        #Navs {border: 1px solid orangered;height: auto;width: 450px; margin-left: 75px;display: flex;padding-top:30px;justify-content: space-evenly;font-weight: bolder;border: none;}
+
+        #Search {border: 1px solid orangered; height: auto;width: 450px; margin-left: 75px; border: none;}
+
+        #Colourbar {border: 1px solid black;height: 30px;width: 400px;margin-left: 24px;margin-top: 20px;background-color:#ecf0f1;border: none; }
+
+        #Nagivation {border: 1px solid orangered;height: auto; width: 275px;margin-left: 75px;display: flex;justify-content: space-between;border: none;}
+
+        #top-2 {border: 2px dotted black;width: 100%; height: 600px; margin-top: 15px;margin-left: 25px;}
+
+        #filters-h { border: 2px dashed black;height: 40px;margin-top: 20px; display: flex;justify-content: space-between;border: none;}
+
+        #sort { border: 1px solid black;width: 20%;height: 450px; padding-left: 20px; border: none;}
+
+        #sort- { border: 1px solid black; width: 100%; height: 244px; border: none;}
+
+        #photos {width: 50px;height: 150px;}
+
+        #Content {border: 5px dashed red;width: 250px;height: 250px;}
+        
+    </style>
+    
+</head>
+<body>
+    <div id="Top">
+        <div id="Logo">
+            <img style="height: 74px; width: 94px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwvgp29SjDB7-_2M_wmB_9AvEBUlf4EcgDYLsWqt3gGg&s">
+        </div>
+        <div id="Navs" >
+            <div>Men</div>
+            <div>Women</div>
+            <div>Kids</div>
+            <div>Home & Living</div>
+            <div>Beauty</div>
+            <div>Studio</div>
+            
+        </div>
+        <div id="Search">
+            <div id="Colourbar">
+                <div style="margin-top: 8px;margin-left: 5px; background-color: #ecf0f1;border: none;padding: 7px;"><i class="fa-solid fa-magnifying-glass"></i><input placeholder="Search for products,brand and More" style="margin-left: 15px; width: 325px;margin-bottom: 5px;background-color: #ecf0f1;border: none; padding-top: px;"/></div>
+                
+            </div>
+        </div>
+        <div id="Nagivation">
+            <div style="padding-left: 50px;padding-top: 25px;"><i class="fa-regular fa-user"></i><p style="margin-left: -15px;">Profile</p></div>
+            <div style="padding-top: 25px;"><i class="fa-regular fa-heart"></i><p style="margin-left: -15px;">Wishlist</p></div>
+            <div style="padding-top: 25px; padding-right: 50px;"><i class="fa-solid fa-bag-shopping"></i><p style="margin-left: -8px;">Bag</p></div>
+
+        </div>
+    </div>
+    <div id="top-2">
+        <div id="subdivision">
+            <p>Home / Clothing / <b>Casual Shirts for Men</b></p>
+            <P style="padding-top: 15px;"><b>Casuals Shirts for Men</b>- 15000 Items</P>
+        </div>
+        <div id="filters-h">
+            <div style="padding-top: 10PX; padding-left: 20px;"><b>FILTERS</b></div>
+            <div style="display: flex; padding-top: 10px;">
+                <P>Add Ons</P> 
+                <i class="fa-solid fa-chevron-down"></i>
+                <P style="padding-left: 20px;">Bundles</P> 
+                <i class="fa-solid fa-chevron-down"></i>
+                <P style="padding-left: 20px;">Collar</P> 
+                <i class="fa-solid fa-chevron-down"></i>
+                <P style="padding-left: 20px;">Country of origin</P> 
+                <i class="fa-solid fa-chevron-down"></i>
+                <P style="padding-left: 20px;">Fabric</P> 
+                <i class="fa-solid fa-chevron-down"></i>
+                <P style="padding-left: 20px;">Fit</P> 
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div style="display: flex;padding-top: 10px; padding-right: 60px;">
+                <P>Sort By : <b>Recomended</b></P>
+                <i style="padding-left: 40px;" class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+        <div id="sort">
+            <diV style="display: flex; padding-top: 25px;">
+                <p><b>BRAND</b></p>
+                <i style="padding-left: 150px;padding-top: 5px;;" class="fa-solid fa-magnifying-glass"></i>
+            </diV>
+            <div style="padding-left: 30px;">
+                <P><input type="checkbox"/>Highlander </P>
+                <P><input type="checkbox"/>Buffole </P>
+                <P><input type="checkbox"/>U.S Polo </P>
+                <P><input type="checkbox"/>Puma</P>
+                <P><input type="checkbox"/>Nike </P>
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: red;">+601 More</p>
+            </div>
+            <div style="padding-top: 30px;">
+                <P><b>COLOR</b></P>
+                <i style="display:  flex;" class="fa-solid fa-magnifying-glass"></i>
+
+                <div style="padding-left: 30px;">
+                    <P><input type="checkbox"/>Off White </P>
+                    <P><input type="checkbox"/>Narangi </P>
+                    <P><input type="checkbox"/>Burgandi </P>
+                    <P><input type="checkbox"/>Shavy Blue</P>
+                    <P><input type="checkbox"/>Navy Blue</P>
+                </div>
+            </div>
+
+            <div style="padding-top: 30px;" id="sort-">
+                <P><b>PRICE RANGE</b></P>
+                <div style="padding-left: 30px;">
+                    <P><input type="checkbox"/>600-700 </P>
+                    <P><input type="checkbox"/>1200-1500 </P>
+                    <P><input type="checkbox"/>1600-1700 </P>
+                    <P><input type="checkbox"/>2000-4000</P>
+                    <P><input type="checkbox"/>4000-10000</P>
+                </div>
+            </div>
+
+            <div style="border: 2px dashed red;height: 450px;width:1000px; display: flex; padding-top: 20px;justify-content: space-evenly; margin-left: 280px;margin-top: -590px; border: none;">
+             <div>
+                <img style="width: 200px;height: 300px;" src="https://m.media-amazon.com/images/I/71pGhgjVR3L._SL1500_.jpg"/>
+                <P style="padding-left: 75px;">U.S Polo</P>
+                <p style="padding-left: 50px;">Men Casual Shirts</p>
+                <p style="padding-left: 20px;">Rs.899 <a><s>MRP. 1699</s></a><a style="color: red;">Rs.700 off</a></p>
+             </div>
+             <div>
+                <img style="width: 200px; height: 300px;" src="https://m.media-amazon.com/images/I/715pbgxBXzL._SL1440_.jpg"/>
+                <P style="padding-left: 75px;">U.S Polo</P>
+                <p style="padding-left: 50px;">Men Casual Shirts</p>
+                <p style="padding-left: 20px;">Rs.899 <a><s>MRP. 1699</s></a><a style="color: red;">Rs.700 off</a></p>
+             </div>
+             <div>
+                <img style="width: 200px; height: 300px;" src="https://m.media-amazon.com/images/I/81zwg50z1aL._SL1500_.jpg"/>
+                <P style="padding-left: 75px;">U.S Polo</P>
+                <p style="padding-left: 50px;">Men Casual Shirts</p>
+                <p style="padding-left: 20px;">Rs.899 <a><s>MRP. 1699</s></a><a style="color: red;">Rs.700 off</a></p>
+             </div>
+             <div>
+                <img style="width: 200px;height: 300px;" src="https://m.media-amazon.com/images/I/61UsmAkYYmL._SL1500_.jpg"/>
+                <P style="padding-left: 75px;">U.S Polo</P>
+                <p style="padding-left: 50px;">Men Casual Shirts</p>
+                <p style="padding-left: 20px;">Rs.899 <a><s>MRP. 1699</s></a><a style="color: red;">Rs.700 off</a></p>
+             </div>
+            </div>
+    
+
+            
+
+           
+
+        </div>
+
+       
+        
+        
+    </div>
+    
+</body>
+
+</html>
