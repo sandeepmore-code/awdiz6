@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #todoList {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .todo {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 8px;
+        }
+
+        .delete-btn {
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+    <title>Todo App</title>
+</head>
+<body>
+
+<div id="todoList">
+    <h2>Todo List</h2>
+    <div>
+        <input type="text" id="newTodo" placeholder="Add a new todo">
+        <button onclick="addTodo()">Add</button>
+    </div>
+    <ul id="todos"></ul>
+</div>
+
+<script>
+    // Get existing todos from local storage or initialize an empty array
+    let todos = JSON.parse(localStorage.getItem('todos')) || [];
+
+    // // Render todos to the page
+    // function renderTodos() {
+    //     const todoList = document.getElementById('todos');
+    //     todoList.innerHTML = '';
+
+    //     todos.forEach((todo, index) => {
+    //         const todoElement = document.createElement('li');
+    //         todoElement.innerHTML = `
+    //             <div class="todo">
+    //                 <span>${todo}</span>
+    //                 <span class="delete-btn" onclick="deleteTodo(${index})">Delete</span>
+    //             </div>
+    //         `;
+    //         todoList.appendChild(todoElement);
+    //     });
+
+    //     // Update local storage with the latest todos
+    //     localStorage.setItem('todos', JSON.stringify(todos));
+    // }
+
+    // Add a new todo
+    function addTodo() {
+        const newTodoInput = document.getElementById('newTodo');
+        const newTodo = newTodoInput.value.trim();
+
+        if (newTodo !== '') {
+            todos.push(newTodo);
+            newTodoInput.value = '';
+            renderTodos();
+        }
+    }
+
+    // Delete a todo
+    function deleteTodo(index) {
+        todos.splice(index, 1);
+        renderTodos();
+    }
+
+    // Initial render
+    renderTodos();
+</script>
+
+</body>
+</html>
